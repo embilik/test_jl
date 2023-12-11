@@ -1,0 +1,37 @@
+    {
+        "source": [
+          {
+            "name": "base",
+            "storeType": "object_store",
+            "storeConfig": {
+              "path": "/Users/emmanuel/jrl_data/base_data.csv",
+              "format": "csv"
+            }
+          },
+          {
+            "name": "options",
+            "storeType": "object_store",
+            "storeConfig": {
+              "path": "/Users/emmanuel/jrl_data/options_data.csv",
+              "format": "csv"
+            }
+          },
+          {
+            "name": "vehicle_mapping",
+            "storeType": "object_store",
+            "storeConfig": {
+              "path": "/Users/emmanuel/jrl_data/vehicle_line_mapping.csv",
+              "format": "csv"
+            }
+          }
+        ],
+        "sink": {
+          "storeType": "object_store",
+          "storeConfig": {
+            "path": "sink/{env}",
+            "format": "csv",
+            "mode": "overwrite"
+          }
+        }
+      }
+      
